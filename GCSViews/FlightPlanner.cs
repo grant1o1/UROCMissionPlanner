@@ -169,7 +169,9 @@ namespace MissionPlanner.GCSViews
 
             // get map type
             comboBoxMapType.ValueMember = "Name";
-            comboBoxMapType.DataSource = new GMapProvider[] { GMapProviders.BingHybridMap, MissionPlanner.Maps.WMSProvider.Instance};
+            //comboBoxMapType.DataSource = new GMapProvider[] { GMapProviders.GoogleSatelliteMap, GMapProviders.BingHybridMap, MissionPlanner.Maps.WMSProvider.Instance };
+            //comboBoxMapType.DataSource = new GMapProvider[] { GMapProviders.GoogleSatelliteMap, GMapProviders.BingHybridMap, MissionPlanner.Maps.WMSProvider.Instance };
+            comboBoxMapType.DataSource = GMapProviders.List.ToArray();
             comboBoxMapType.SelectedItem = MainMap.MapProvider;
 
             comboBoxMapType.SelectedValueChanged += comboBoxMapType_SelectedValueChanged;

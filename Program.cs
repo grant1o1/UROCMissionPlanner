@@ -316,23 +316,23 @@ namespace MissionPlanner
             Console.WriteLine("Setup GMaps 2");
             // add my custom map providers
             GMap.NET.MapProviders.GMapProviders.List.Add(Maps.WMSProvider.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.WMTSProvider.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Custom.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Earthbuilder.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Statkart_Topo2.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Eniro_Topo.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.MapBox.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.MapboxNoFly.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.MapboxUser.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Lake.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1974.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1979.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1984.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1988.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Relief.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Slopezone.Instance);
-            GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Sea.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.WMTSProvider.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Custom.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Earthbuilder.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Statkart_Topo2.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Eniro_Topo.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.MapBox.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.MapboxNoFly.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.MapboxUser.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Lake.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1974.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1979.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1984.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_1988.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Relief.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Slopezone.Instance);
+            //GMap.NET.MapProviders.GMapProviders.List.Add(Maps.Japan_Sea.Instance);
 
             if(Xamarin.Essentials.DeviceInfo.Idiom == Xamarin.Essentials.DeviceIdiom.Desktop || Xamarin.Essentials.DeviceInfo.Idiom == Xamarin.Essentials.DeviceIdiom.Unknown)
                 ZedGraph.PaneBase.Default.IsFontsScaled = false;

@@ -25,15 +25,17 @@ namespace GMap.NET.MapProviders
         {
             list = new List<GMapProvider>();
 
-            Type type = typeof(GMapProviders);
-            foreach (var p in type.GetFields())
-            {
-                var v = p.GetValue(null) as GMapProvider; // static classes cannot be instanced, so use null...
-                if (v != null)
-                {
-                    list.Add(v);
-                }
-            }
+            //Type type = typeof(GMapProviders);
+            //foreach (var p in type.GetFields())
+            //{
+            //    var v = p.GetValue(null) as GMapProvider; // static classes cannot be instanced, so use null...
+            //    if (v != null)
+            //    {
+            //        list.Add(v);
+            //    }
+            //}
+            list.Add(GMapProviders.EmptyProvider);
+            list.Add(GMapProviders.BingHybridMap);
 
             Hash = new Dictionary<Guid, GMapProvider>();
             foreach (var p in list)
