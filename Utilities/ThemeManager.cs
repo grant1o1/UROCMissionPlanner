@@ -1082,27 +1082,27 @@ mc:Ignorable=""d""
                     Controls.QuickView but = (QuickView)ctl;
                     if (but.Name == "quickView6")
                     {
-                        but.numberColor = Color.FromArgb((0 + mix.R) / 2, (255 + mix.G) / 2, (252 + mix.B) / 2);
+                        but.numberColor = Color.White;
                     }
                     else if (but.Name == "quickView5")
                     {
-                        but.numberColor = Color.FromArgb((254 + mix.R) / 2, (254 + mix.G) / 2, (86 + mix.B) / 2);
+                        but.numberColor = Color.White;
                     }
                     else if (but.Name == "quickView4")
                     {
-                        but.numberColor = Color.FromArgb((0 + mix.R) / 2, (255 + mix.G) / 2, (83 + mix.B) / 2);
+                        but.numberColor = Color.White;
                     }
                     else if (but.Name == "quickView3")
                     {
-                        but.numberColor = Color.FromArgb((255 + mix.R) / 2, (96 + mix.G) / 2, (91 + mix.B) / 2);
+                        but.numberColor = Color.White;
                     }
                     else if (but.Name == "quickView2")
                     {
-                        but.numberColor = Color.FromArgb((254 + mix.R) / 2, (132 + mix.G) / 2, (46 + mix.B) / 2);
+                        but.numberColor = Color.White;
                     }
                     else if (but.Name == "quickView1")
                     {
-                        but.numberColor = Color.FromArgb((209 + mix.R) / 2, (151 + mix.G) / 2, (248 + mix.B) / 2);
+                        but.numberColor = Color.White;
                     }
                     but.numberColorBackup = but.numberColor;
                     //return;  //return removed to process all quickView controls
