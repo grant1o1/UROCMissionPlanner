@@ -356,17 +356,17 @@ namespace MissionPlanner
             Settings.Instance.UserAgent = Application.ProductName + " " + Application.ProductVersion + " (" +
                                           Environment.OSVersion?.VersionString + ")";
 
-            Console.WriteLine("Setup check gdal dir");
-            // optionally add gdal support
-            if (Directory.Exists(Application.StartupPath + Path.DirectorySeparatorChar + "gdal"))
-            {
-                Console.WriteLine("Setup gdal");
-#if !LIB
-                // net461
-                MissionPlanner.Utilities.GDAL.GDALBase = new GDAL.GDAL();
-#endif
-                GMap.NET.MapProviders.GMapProviders.List.Add(MissionPlanner.Utilities.GDAL.GetProvider());
-            }
+//            Console.WriteLine("Setup check gdal dir");
+//            // optionally add gdal support
+//            if (Directory.Exists(Application.StartupPath + Path.DirectorySeparatorChar + "gdal"))
+//            {
+//                Console.WriteLine("Setup gdal");
+//#if !LIB
+//                // net461
+//                MissionPlanner.Utilities.GDAL.GDALBase = new GDAL.GDAL();
+//#endif
+//                GMap.NET.MapProviders.GMapProviders.List.Add(MissionPlanner.Utilities.GDAL.GetProvider());
+//            }
 
             Console.WriteLine("Setup proxy");
             // add proxy settings
