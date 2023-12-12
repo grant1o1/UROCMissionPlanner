@@ -623,10 +623,10 @@ namespace MissionPlanner.GCSViews
             if (!string.IsNullOrEmpty(config))
                 extraargs += @" --defaults """ + config + @"""";
 
-            extraargs += " " + txt_cmdline.Text + " ";
+            //extraargs += " " + txt_cmdline.Text + " ";
 
-            if (chk_wipe.Checked)
-                extraargs += " --wipe ";
+            //if (chk_wipe.Checked)
+            //    extraargs += " --wipe ";
 
             string simdir = sitldirectory + model + Path.DirectorySeparatorChar;
 
