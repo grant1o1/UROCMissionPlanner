@@ -6273,5 +6273,10 @@ namespace MissionPlanner.GCSViews
                 CustomMessageBox.Show(Strings.CommandFailed + ex.ToString(), Strings.ERROR);
             }
         }
+
+        private void modifyandSetAlt_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
