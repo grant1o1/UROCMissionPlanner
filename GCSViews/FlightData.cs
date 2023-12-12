@@ -4258,21 +4258,21 @@ namespace MissionPlanner.GCSViews
             });
         }
 
-        private void onOffCameraOverlapToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CameraOverlap = onOffCameraOverlapToolStripMenuItem.Checked;
+        //private void onOffCameraOverlapToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    CameraOverlap = onOffCameraOverlapToolStripMenuItem.Checked;
 
-            foreach (var mark in photosoverlay.Markers.ToArray())
-            {
-                if (mark is GMapMarkerPhoto)
-                {
-                    if (!CameraOverlap)
-                    {
-                        photosoverlay.Markers.Remove(mark);
-                    }
-                }
-            }
-        }
+        //    foreach (var mark in photosoverlay.Markers.ToArray())
+        //    {
+        //        if (mark is GMapMarkerPhoto)
+        //        {
+        //            if (!CameraOverlap)
+        //            {
+        //                photosoverlay.Markers.Remove(mark);
+        //            }
+        //        }
+        //    }
+        //}
 
         void POI_POIModified(object sender, EventArgs e)
         {
