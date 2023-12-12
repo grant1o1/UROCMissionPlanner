@@ -725,12 +725,12 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.BUT_abortland, 3, 8);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_abortland, 4, 6);
             this.tableLayoutPanel1.Controls.Add(this.modifyandSetLoiterRad, 6, 2);
             this.tableLayoutPanel1.Controls.Add(this.BUT_clear_track, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_resumemis, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_resumemis, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.modifyandSetAlt, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.modifyandSetSpeed, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.CMB_setwp, 0, 1);
@@ -738,7 +738,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel1.Controls.Add(this.BUT_joystick, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.BUT_RAWSensor, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.BUT_Homealt, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BUTrestartmission, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.BUTrestartmission, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickrtl, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickmanual, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.BUT_setwp, 1, 1);
