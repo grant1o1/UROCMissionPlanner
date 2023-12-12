@@ -2963,14 +2963,14 @@ namespace MissionPlanner.GCSViews
             if (groundColorToolStripMenuItem.Checked)
             {
                 // brown
-                hud1.groundColor1 = Color.FromArgb(147, 78, 1);
-                hud1.groundColor2 = Color.FromArgb(60, 33, 4);
+                hud1.groundColor1 = Color.FromArgb(64, 64, 65);
+                hud1.groundColor2 = Color.FromArgb(64, 64, 65);
             }
             else
             {
                 // green
-                hud1.groundColor1 = Color.FromArgb(0x9b, 0xb8, 0x24);
-                hud1.groundColor2 = Color.FromArgb(0x41, 0x4f, 0x07);
+                hud1.groundColor1 = Color.FromArgb(64, 64, 65);
+                hud1.groundColor2 = Color.FromArgb(64, 64, 65);
             }
 
             Settings.config["groundColorToolStripMenuItem"] = groundColorToolStripMenuItem.Checked.ToString();
