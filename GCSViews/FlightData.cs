@@ -1359,6 +1359,25 @@ namespace MissionPlanner.GCSViews
             ((Control) sender).Enabled = true;
         }
 
+        private void BUT_quickqloiter_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ((Control)sender).Enabled = false;
+                if (MainV2.comPort.MAV.cs.firmware == Firmwares.ArduPlane ||
+                    MainV2.comPort.MAV.cs.firmware == Firmwares.Ateryx ||
+                    MainV2.comPort.MAV.cs.firmware == Firmwares.ArduRover ||
+                    MainV2.comPort.MAV.cs.firmware == Firmwares.ArduCopter2)
+                    MainV2.comPort.setMode("QLOITER");
+            }
+            catch
+            {
+                CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
+            }
+
+    ((Control)sender).Enabled = true;
+        }
+
         private void BUT_quickrtl_Click(object sender, EventArgs e)
         {
             try
