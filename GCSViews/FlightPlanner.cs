@@ -2041,11 +2041,11 @@ namespace MissionPlanner.GCSViews
             }
         }
 
-        public void chk_grid_CheckedChanged(object sender, EventArgs e)
-        {
-            grid = chk_grid.Checked;
-            this.MainMap.Refresh();
-        }
+        //public void chk_grid_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    grid = chk_grid.Checked;
+        //    this.MainMap.Refresh();
+        //}
 
         public void CHK_splinedefault_CheckedChanged(object sender, EventArgs e)
         {
@@ -7971,6 +7971,16 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             var ans = GDAL.GDALProvider.Instance.opacity;
             if (InputBox.Show("Opacity 0.0-1.0", "Enter opacity (0.0-1.0)", ref ans) == DialogResult.OK)
                 GDAL.GDALProvider.Instance.opacity = double.Parse(InputBox.value);
+        }
+
+        private void coords1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxMapType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
