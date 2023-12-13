@@ -2127,10 +2127,10 @@ namespace MissionPlanner.GCSViews
             this.goHereToolStripMenuItem,
             this.flyToHereAltToolStripMenuItem,
             this.flyToCoordsToolStripMenuItem,
+            this.takeOffToolStripMenuItem,
             this.addPoiToolStripMenuItem,
-            this.flightPlannerToolStripMenuItem,
             this.setHomeHereToolStripMenuItem,
-            this.takeOffToolStripMenuItem});
+            this.flightPlannerToolStripMenuItem});
             this.contextMenuStripMap.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStripMap, "contextMenuStripMap");
             // 
@@ -2235,7 +2235,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 0D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
