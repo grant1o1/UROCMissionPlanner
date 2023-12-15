@@ -22,7 +22,12 @@ namespace MissionPlanner.GCSViews
             this.setGStreamerSourceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hereLinkVideoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gStreamerStopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setAspectRatioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.russianHudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.swapWithMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setBatteryCellCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
             this.tabControlactions = new System.Windows.Forms.TabControl();
@@ -148,16 +153,16 @@ namespace MissionPlanner.GCSViews
             this.goHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flyToHereAltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flyToCoordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.poiatcoordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setEKFHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.but_disablejoystick = new MissionPlanner.Controls.MyButton();
             this.windDir1 = new MissionPlanner.Controls.WindDir();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -428,7 +433,12 @@ namespace MissionPlanner.GCSViews
             // 
             this.contextMenuStripHud.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.videoToolStripMenuItem,
+            this.setAspectRatioToolStripMenuItem,
             this.userItemsToolStripMenuItem,
+            this.russianHudToolStripMenuItem,
+            this.swapWithMapToolStripMenuItem,
+            this.groundColorToolStripMenuItem,
+            this.setBatteryCellCountToolStripMenuItem,
             this.showIconsToolStripMenuItem});
             this.contextMenuStripHud.Name = "contextMenuStrip2";
             resources.ApplyResources(this.contextMenuStripHud, "contextMenuStripHud");
@@ -488,11 +498,42 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.gStreamerStopToolStripMenuItem, "gStreamerStopToolStripMenuItem");
             this.gStreamerStopToolStripMenuItem.Click += new System.EventHandler(this.GStreamerStopToolStripMenuItem_Click);
             // 
+            // setAspectRatioToolStripMenuItem
+            // 
+            this.setAspectRatioToolStripMenuItem.Name = "setAspectRatioToolStripMenuItem";
+            resources.ApplyResources(this.setAspectRatioToolStripMenuItem, "setAspectRatioToolStripMenuItem");
+            this.setAspectRatioToolStripMenuItem.Click += new System.EventHandler(this.setAspectRatioToolStripMenuItem_Click);
+            // 
             // userItemsToolStripMenuItem
             // 
             this.userItemsToolStripMenuItem.Name = "userItemsToolStripMenuItem";
             resources.ApplyResources(this.userItemsToolStripMenuItem, "userItemsToolStripMenuItem");
             this.userItemsToolStripMenuItem.Click += new System.EventHandler(this.hud_UserItem);
+            // 
+            // russianHudToolStripMenuItem
+            // 
+            this.russianHudToolStripMenuItem.Name = "russianHudToolStripMenuItem";
+            resources.ApplyResources(this.russianHudToolStripMenuItem, "russianHudToolStripMenuItem");
+            this.russianHudToolStripMenuItem.Click += new System.EventHandler(this.russianHudToolStripMenuItem_Click);
+            // 
+            // swapWithMapToolStripMenuItem
+            // 
+            this.swapWithMapToolStripMenuItem.Name = "swapWithMapToolStripMenuItem";
+            resources.ApplyResources(this.swapWithMapToolStripMenuItem, "swapWithMapToolStripMenuItem");
+            this.swapWithMapToolStripMenuItem.Click += new System.EventHandler(this.swapWithMapToolStripMenuItem_Click);
+            // 
+            // groundColorToolStripMenuItem
+            // 
+            this.groundColorToolStripMenuItem.CheckOnClick = true;
+            this.groundColorToolStripMenuItem.Name = "groundColorToolStripMenuItem";
+            resources.ApplyResources(this.groundColorToolStripMenuItem, "groundColorToolStripMenuItem");
+            this.groundColorToolStripMenuItem.Click += new System.EventHandler(this.groundColorToolStripMenuItem_Click);
+            // 
+            // setBatteryCellCountToolStripMenuItem
+            // 
+            this.setBatteryCellCountToolStripMenuItem.Name = "setBatteryCellCountToolStripMenuItem";
+            resources.ApplyResources(this.setBatteryCellCountToolStripMenuItem, "setBatteryCellCountToolStripMenuItem");
+            this.setBatteryCellCountToolStripMenuItem.Click += new System.EventHandler(this.setBatteryCellCountToolStripMenuItem_Click);
             // 
             // showIconsToolStripMenuItem
             // 
@@ -2111,12 +2152,6 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.flyToCoordsToolStripMenuItem, "flyToCoordsToolStripMenuItem");
             this.flyToCoordsToolStripMenuItem.Click += new System.EventHandler(this.flyToCoordsToolStripMenuItem_Click);
             // 
-            // takeOffToolStripMenuItem
-            // 
-            this.takeOffToolStripMenuItem.Name = "takeOffToolStripMenuItem";
-            resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
-            this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
-            // 
             // addPoiToolStripMenuItem
             // 
             this.addPoiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2152,6 +2187,12 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.poiatcoordsToolStripMenuItem, "poiatcoordsToolStripMenuItem");
             this.poiatcoordsToolStripMenuItem.Click += new System.EventHandler(this.poiatcoordsToolStripMenuItem_Click);
             // 
+            // flightPlannerToolStripMenuItem
+            // 
+            this.flightPlannerToolStripMenuItem.Name = "flightPlannerToolStripMenuItem";
+            resources.ApplyResources(this.flightPlannerToolStripMenuItem, "flightPlannerToolStripMenuItem");
+            this.flightPlannerToolStripMenuItem.Click += new System.EventHandler(this.flightPlannerToolStripMenuItem_Click);
+            // 
             // setHomeHereToolStripMenuItem
             // 
             this.setHomeHereToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2172,11 +2213,11 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.setHomeHereToolStripMenuItem1, "setHomeHereToolStripMenuItem1");
             this.setHomeHereToolStripMenuItem1.Click += new System.EventHandler(this.setHomeHereToolStripMenuItem_Click);
             // 
-            // flightPlannerToolStripMenuItem
+            // takeOffToolStripMenuItem
             // 
-            this.flightPlannerToolStripMenuItem.Name = "flightPlannerToolStripMenuItem";
-            resources.ApplyResources(this.flightPlannerToolStripMenuItem, "flightPlannerToolStripMenuItem");
-            this.flightPlannerToolStripMenuItem.Click += new System.EventHandler(this.flightPlannerToolStripMenuItem_Click);
+            this.takeOffToolStripMenuItem.Name = "takeOffToolStripMenuItem";
+            resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
+            this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
             // 
             // but_disablejoystick
             // 
@@ -2194,7 +2235,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 0D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2766,6 +2807,7 @@ namespace MissionPlanner.GCSViews
         private Controls.MyLabel lbl_sats;
         private Controls.HSI Gheading;
         private Label lbl_playbackspeed;
+        private System.Windows.Forms.ToolStripMenuItem setAspectRatioToolStripMenuItem;
         public System.Windows.Forms.TabPage tabQuick;
         private Controls.QuickView quickView3;
         private Controls.QuickView quickView2;
@@ -2822,6 +2864,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.OpenFileDialog openScriptDialog;
         private System.Windows.Forms.Timer scriptChecker;
         private System.Windows.Forms.CheckBox checkBoxRedirectOutput;
+        private System.Windows.Forms.ToolStripMenuItem russianHudToolStripMenuItem;
         public System.Windows.Forms.ContextMenuStrip contextMenuStripMap;
         public System.Windows.Forms.ContextMenuStrip contextMenuStripHud;
         private System.Windows.Forms.BindingSource bindingSourceQuickTab;
@@ -2851,6 +2894,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.ToolStripMenuItem takeOffToolStripMenuItem;
         public System.Windows.Forms.TabPage tabPagePreFlight;
         private Controls.PreFlight.CheckListControl checkListControl1;
+        private System.Windows.Forms.ToolStripMenuItem swapWithMapToolStripMenuItem;
         private Controls.MyButton but_disablejoystick;
         private System.Windows.Forms.ToolStripMenuItem videoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recordHudToAVIToolStripMenuItem;
@@ -2878,6 +2922,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.GroupBox groupBoxPitch;
         private Controls.MyButton BUT_PayloadFolder;
         private System.Windows.Forms.ToolStripMenuItem setHomeHereToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem groundColorToolStripMenuItem;
         private Controls.RelayOptions relayOptions1;
         private Controls.RelayOptions relayOptions2;
         private Controls.RelayOptions relayOptions3;
@@ -2893,6 +2938,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.ToolStripMenuItem flyToCoordsToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.ToolStripMenuItem setBatteryCellCountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem undockToolStripMenuItem;
         private System.Windows.Forms.Button ALT_btn;
         private System.Windows.Forms.Button STBY_btn;
