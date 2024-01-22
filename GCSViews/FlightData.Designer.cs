@@ -290,7 +290,7 @@ namespace MissionPlanner.GCSViews
             // 
             // SubMainLeft
             // 
-            this.SubMainLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SubMainLeft.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.SubMainLeft, "SubMainLeft");
             this.SubMainLeft.Name = "SubMainLeft";
             // 
