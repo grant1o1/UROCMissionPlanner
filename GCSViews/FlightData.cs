@@ -6283,5 +6283,585 @@ namespace MissionPlanner.GCSViews
         {
 
         }
+
+        private void MainH_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
+
+        private void SubMainLeft_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
+
+        private void contextMenuStripHud_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void videoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSourceHud_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void zg1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStripactionstab_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void tabQuick_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanelQuick_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void quickView6_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void contextMenuStripQuickView_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void bindingSourceQuickTab_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quickView5_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void quickView4_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void quickView3_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void quickView2_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void quickView1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void tabActions_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CMB_action_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CMB_setwp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CMB_modes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPagemessages_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_messagebox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabActionsSimple_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPagePreFlight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabGauges_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSourceGaugesTab_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gheading_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Galt_ValueInRangeChanged(object sender, AGaugeApp.AGauge.ValueInRangeChangedEventArgs e)
+        {
+
+        }
+
+        private void Gspeed_ValueInRangeChanged(object sender, AGaugeApp.AGauge.ValueInRangeChangedEventArgs e)
+        {
+
+        }
+
+        private void tabTransponder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NACp_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NIC_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NACp_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NIC_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fault_clb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Squawk_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FlightID_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mode_clb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabServo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanelServos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabAuxFunction_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabScripts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxRedirectOutput_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelSelectedScript_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelScriptStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPayload_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BUT_PayloadFolder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxRoll_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TXT_gimbalRollPos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSourcePayloadTab_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxYaw_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TXT_gimbalYawPos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxPitch_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TXT_gimbalPitchPos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabTLogs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPaneltlogs_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_playbackspeed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_logpercent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LBL_logfn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tablogbrowse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_persistent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableMap_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStripMap_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void setHomeHereToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void windDir1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_hdop_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void lbl_sats_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void Gvspeed_ValueInRangeChanged(object sender, AGaugeApp.AGauge.ValueInRangeChangedEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void coords1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void openScriptDialog_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void bindingSourceStatusTab_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modifyandSetLoiterRad_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modifyandSetSpeed_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkListControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions8_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions9_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions10_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions11_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void servoOptions12_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relayOptions1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relayOptions2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relayOptions3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relayOptions4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relayOptions5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relayOptions6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auxOptions1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auxOptions2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auxOptions3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auxOptions4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auxOptions5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auxOptions6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auxOptions7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void distanceBar1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
