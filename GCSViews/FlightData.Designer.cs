@@ -186,7 +186,6 @@ namespace MissionPlanner.GCSViews
             this.scriptChecker = new System.Windows.Forms.Timer(this.components);
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.aGauge1 = new AGaugeApp.AGauge();
             this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
             this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
             this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
@@ -738,7 +737,6 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.aGauge1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.modifyandSetLoiterRad, 3, 8);
             this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 1);
@@ -2525,148 +2523,6 @@ namespace MissionPlanner.GCSViews
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
             this.bindingSourceStatusTab.CurrentChanged += new System.EventHandler(this.bindingSourceStatusTab_CurrentChanged);
             // 
-            // aGauge1
-            // 
-            this.aGauge1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.aGauge1, "aGauge1");
-            this.aGauge1.BaseArcColor = System.Drawing.Color.Transparent;
-            this.aGauge1.BaseArcRadius = 60;
-            this.aGauge1.BaseArcStart = 20;
-            this.aGauge1.BaseArcSweep = 320;
-            this.aGauge1.BaseArcWidth = 2;
-            this.aGauge1.Cap_Idx = ((byte)(0));
-            this.aGauge1.CapColor = System.Drawing.Color.White;
-            this.aGauge1.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge1.CapPosition = new System.Drawing.Point(65, 85);
-            this.aGauge1.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(65, 85),
-        new System.Drawing.Point(30, 55),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge1.CapsText = new string[] {
-        "VSI",
-        "",
-        "",
-        "",
-        ""};
-            this.aGauge1.CapText = "VSI";
-            this.aGauge1.Center = new System.Drawing.Point(75, 75);
-            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("Value0", this.bindingSourceGaugesTab, "verticalspeed", true));
-            this.aGauge1.MaxValue = 10F;
-            this.aGauge1.MinValue = -10F;
-            this.aGauge1.Name = "aGauge1";
-            this.aGauge1.Need_Idx = ((byte)(3));
-            this.aGauge1.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge1.NeedleColor2 = System.Drawing.Color.White;
-            this.aGauge1.NeedleEnabled = false;
-            this.aGauge1.NeedleRadius = 80;
-            this.aGauge1.NeedlesColor1 = new AGaugeApp.AGauge.NeedleColorEnum[] {
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray};
-            this.aGauge1.NeedlesColor2 = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.White};
-            this.aGauge1.NeedlesEnabled = new bool[] {
-        true,
-        false,
-        false,
-        false};
-            this.aGauge1.NeedlesRadius = new int[] {
-        50,
-        30,
-        50,
-        80};
-            this.aGauge1.NeedlesType = new int[] {
-        0,
-        0,
-        0,
-        0};
-            this.aGauge1.NeedlesWidth = new int[] {
-        2,
-        2,
-        2,
-        2};
-            this.aGauge1.NeedleType = 0;
-            this.aGauge1.NeedleWidth = 2;
-            this.aGauge1.Range_Idx = ((byte)(0));
-            this.aGauge1.RangeColor = System.Drawing.Color.LightGreen;
-            this.aGauge1.RangeEnabled = false;
-            this.aGauge1.RangeEndValue = 360F;
-            this.aGauge1.RangeInnerRadius = 1;
-            this.aGauge1.RangeOuterRadius = 60;
-            this.aGauge1.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.LightGreen,
-        System.Drawing.Color.Red,
-        System.Drawing.Color.Orange,
-        System.Drawing.SystemColors.Control,
-        System.Drawing.SystemColors.Control};
-            this.aGauge1.RangesEnabled = new bool[] {
-        false,
-        false,
-        false,
-        false,
-        false};
-            this.aGauge1.RangesEndValue = new float[] {
-        360F,
-        200F,
-        150F,
-        0F,
-        0F};
-            this.aGauge1.RangesInnerRadius = new int[] {
-        1,
-        1,
-        1,
-        70,
-        70};
-            this.aGauge1.RangesOuterRadius = new int[] {
-        60,
-        60,
-        60,
-        80,
-        80};
-            this.aGauge1.RangesStartValue = new float[] {
-        0F,
-        150F,
-        75F,
-        0F,
-        0F};
-            this.aGauge1.RangeStartValue = 0F;
-            this.aGauge1.ScaleLinesInterColor = System.Drawing.Color.White;
-            this.aGauge1.ScaleLinesInterInnerRadius = 52;
-            this.aGauge1.ScaleLinesInterOuterRadius = 60;
-            this.aGauge1.ScaleLinesInterWidth = 1;
-            this.aGauge1.ScaleLinesMajorColor = System.Drawing.Color.White;
-            this.aGauge1.ScaleLinesMajorInnerRadius = 50;
-            this.aGauge1.ScaleLinesMajorOuterRadius = 60;
-            this.aGauge1.ScaleLinesMajorStepValue = 2F;
-            this.aGauge1.ScaleLinesMajorWidth = 2;
-            this.aGauge1.ScaleLinesMinorColor = System.Drawing.Color.White;
-            this.aGauge1.ScaleLinesMinorInnerRadius = 55;
-            this.aGauge1.ScaleLinesMinorNumOf = 9;
-            this.aGauge1.ScaleLinesMinorOuterRadius = 60;
-            this.aGauge1.ScaleLinesMinorWidth = 1;
-            this.aGauge1.ScaleNumbersColor = System.Drawing.Color.White;
-            this.aGauge1.ScaleNumbersFormat = "";
-            this.aGauge1.ScaleNumbersRadius = 42;
-            this.aGauge1.ScaleNumbersRotation = 0;
-            this.aGauge1.ScaleNumbersStartScaleLine = 1;
-            this.aGauge1.ScaleNumbersStepScaleLines = 1;
-            this.aGauge1.Value = 0F;
-            this.aGauge1.Value0 = 0F;
-            this.aGauge1.Value1 = 0F;
-            this.aGauge1.Value2 = 0F;
-            this.aGauge1.Value3 = 0F;
-            // 
             // modifyandSetLoiterRad
             // 
             resources.ApplyResources(this.modifyandSetLoiterRad, "modifyandSetLoiterRad");
@@ -3228,6 +3084,5 @@ namespace MissionPlanner.GCSViews
         private Controls.AuxOptions auxOptions5;
         private Controls.AuxOptions auxOptions6;
         private Controls.AuxOptions auxOptions7;
-        private AGaugeApp.AGauge aGauge1;
     }
 }
