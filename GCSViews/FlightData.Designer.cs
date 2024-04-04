@@ -734,8 +734,8 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.CMB_setwp, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.BUT_ARM, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.BUT_joystick, 3, 3);
@@ -850,6 +850,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_quickmanual.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_quickmanual.ColorNotEnabled = System.Drawing.Color.Empty;
             resources.ApplyResources(this.BUT_quickmanual, "BUT_quickmanual");
+            this.BUT_quickmanual.Image = global::MissionPlanner.Properties.Resources.light_01;
             this.BUT_quickmanual.Name = "BUT_quickmanual";
             this.BUT_quickmanual.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.toolTip1.SetToolTip(this.BUT_quickmanual, resources.GetString("BUT_quickmanual.ToolTip"));
@@ -862,6 +863,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_quickqloiter.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_quickqloiter.ColorNotEnabled = System.Drawing.Color.Empty;
             resources.ApplyResources(this.BUT_quickqloiter, "BUT_quickqloiter");
+            this.BUT_quickqloiter.Image = global::MissionPlanner.Properties.Resources.Hframelight;
             this.BUT_quickqloiter.Name = "BUT_quickqloiter";
             this.BUT_quickqloiter.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.BUT_quickqloiter.UseVisualStyleBackColor = true;
