@@ -734,20 +734,21 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 7);
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.CMB_setwp, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_ARM, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_joystick, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_RAWSensor, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_Homealt, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_quickrtl, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_quickmanual, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_quickqloiter, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_ARM, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_joystick, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_RAWSensor, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_Homealt, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_quickrtl, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_quickmanual, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_quickqloiter, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.BUT_setwp, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CMB_modes, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_quickauto, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_setmode, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_modes, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_quickauto, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_setmode, 1, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -788,14 +789,15 @@ namespace MissionPlanner.GCSViews
             // 
             this.BUT_ARM.BackColor = System.Drawing.Color.White;
             this.BUT_ARM.BackgroundImage = global::MissionPlanner.Properties.Resources.iconWarning32;
-            resources.ApplyResources(this.BUT_ARM, "BUT_ARM");
-            this.BUT_ARM.BGGradBot = System.Drawing.Color.LightGray;
-            this.BUT_ARM.BGGradTop = System.Drawing.Color.LightGray;
+            this.BUT_ARM.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BUT_ARM.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BUT_ARM.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_ARM.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_ARM.ColorNotEnabled = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.BUT_ARM, "BUT_ARM");
+            this.BUT_ARM.Image = global::MissionPlanner.Properties.Resources.iconWarning32;
             this.BUT_ARM.Name = "BUT_ARM";
-            this.BUT_ARM.Outline = System.Drawing.Color.LightGray;
+            this.BUT_ARM.Outline = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BUT_ARM.TextColor = System.Drawing.Color.Black;
             this.BUT_ARM.TextColorNotEnabled = System.Drawing.Color.Black;
             this.toolTip1.SetToolTip(this.BUT_ARM, resources.GetString("BUT_ARM.ToolTip"));
@@ -840,14 +842,18 @@ namespace MissionPlanner.GCSViews
             // 
             // BUT_quickrtl
             // 
+            this.BUT_quickrtl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BUT_quickrtl.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BUT_quickrtl.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BUT_quickrtl.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_quickrtl.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_quickrtl.ColorNotEnabled = System.Drawing.Color.Empty;
             resources.ApplyResources(this.BUT_quickrtl, "BUT_quickrtl");
             this.BUT_quickrtl.Name = "BUT_quickrtl";
+            this.BUT_quickrtl.Outline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BUT_quickrtl.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.toolTip1.SetToolTip(this.BUT_quickrtl, resources.GetString("BUT_quickrtl.ToolTip"));
-            this.BUT_quickrtl.UseVisualStyleBackColor = true;
+            this.BUT_quickrtl.UseVisualStyleBackColor = false;
             this.BUT_quickrtl.Click += new System.EventHandler(this.BUT_quickrtl_Click);
             // 
             // BUT_quickmanual
@@ -856,7 +862,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_quickmanual.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_quickmanual.ColorNotEnabled = System.Drawing.Color.Empty;
             resources.ApplyResources(this.BUT_quickmanual, "BUT_quickmanual");
-            this.BUT_quickmanual.Image = global::MissionPlanner.Properties.Resources.light_01;
+            this.BUT_quickmanual.Image = global::MissionPlanner.Properties.Resources._01_01;
             this.BUT_quickmanual.Name = "BUT_quickmanual";
             this.BUT_quickmanual.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.toolTip1.SetToolTip(this.BUT_quickmanual, resources.GetString("BUT_quickmanual.ToolTip"));

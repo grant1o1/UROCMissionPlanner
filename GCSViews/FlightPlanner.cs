@@ -7982,5 +7982,15 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
 
         }
+
+        private void TXT_WPRad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LBL_WPRad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
