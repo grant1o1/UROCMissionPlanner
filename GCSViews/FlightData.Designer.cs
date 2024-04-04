@@ -734,13 +734,13 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.CMB_setwp, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_ARM, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_joystick, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_RAWSensor, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_Homealt, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_ARM, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_joystick, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_RAWSensor, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_Homealt, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickrtl, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickmanual, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickqloiter, 0, 4);
@@ -2301,7 +2301,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
