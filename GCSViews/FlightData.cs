@@ -398,7 +398,7 @@ namespace MissionPlanner.GCSViews
                 Gspeed.MaxValue = gspeedMax;
             }
 
-            MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
+            //MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
 
             //HUD Theming, color setup
             myhud.groundColor1 = ThemeManager.HudGroundTop;
@@ -2646,89 +2646,89 @@ namespace MissionPlanner.GCSViews
                 mainloop();
             }
         }
+        
+        //private void FlightData_ParentChanged(object sender, EventArgs e)
+        //{
+        //    if (MainV2.cam != null)
+        //    {
+        //        MainV2.cam.camimage += cam_camimage;
+        //    }
 
-        private void FlightData_ParentChanged(object sender, EventArgs e)
-        {
-            if (MainV2.cam != null)
-            {
-                MainV2.cam.camimage += cam_camimage;
-            }
+        //    // QUAD
+        //    if (MainV2.comPort.MAV.param.ContainsKey("WP_SPEED_MAX"))
+        //    {
+        //        try
+        //        {
+        //            modifyandSetSpeed.Value = (decimal) ((float) MainV2.comPort.MAV.param["WP_SPEED_MAX"] / 100.0);
+        //        }
+        //        catch
+        //        {
+        //            modifyandSetSpeed.Enabled = false;
+        //        }
+        //    }
+        //    // plane 3.7 and below with airspeed, uses ARSPD_ENABLE:
+        //    else if ((MainV2.comPort.MAV.param.ContainsKey("TRIM_ARSPD_CM") &&
+        //              MainV2.comPort.MAV.param.ContainsKey("ARSPD_ENABLE")
+        //              && MainV2.comPort.MAV.param.ContainsKey("ARSPD_USE") &&
+        //              (float) MainV2.comPort.MAV.param["ARSPD_ENABLE"] == 1
+        //              && (float) MainV2.comPort.MAV.param["ARSPD_USE"] == 1) ||
+        //             // plane 3.8 and above with airspeed as per plane 3.7 to plane 3.8 migration wiki page, no longer uses ARSPD_ENABLE, uses ARSPD_TYPE instead:
+        //             (MainV2.comPort.MAV.param.ContainsKey("TRIM_ARSPD_CM") &&
+        //              MainV2.comPort.MAV.param.ContainsKey("ARSPD_TYPE")
+        //              && MainV2.comPort.MAV.param.ContainsKey("ARSPD_USE") &&
+        //              (float) MainV2.comPort.MAV.param["ARSPD_TYPE"] > 0
+        //              && (float) MainV2.comPort.MAV.param["ARSPD_USE"] == 1))
+        //    {
+        //        try
+        //        {
+        //            modifyandSetSpeed.Value = (decimal) ((float) MainV2.comPort.MAV.param["TRIM_ARSPD_CM"] / 100.0);
+        //        }
+        //        catch
+        //        {
+        //            modifyandSetSpeed.Enabled = false;
+        //        }
+        //    } // plane without airspeed
+        //    else if (MainV2.comPort.MAV.param.ContainsKey("TRIM_THROTTLE") &&
+        //             MainV2.comPort.MAV.param.ContainsKey("ARSPD_USE")
+        //             && (float) MainV2.comPort.MAV.param["ARSPD_USE"] == 0)
+        //    {
+        //        try
+        //        {
+        //            modifyandSetSpeed.Value = (decimal) (float) MainV2.comPort.MAV.param["TRIM_THROTTLE"];
+        //        }
+        //        catch
+        //        {
+        //            modifyandSetSpeed.Enabled = false;
+        //        }
 
-            // QUAD
-            if (MainV2.comPort.MAV.param.ContainsKey("WP_SPEED_MAX"))
-            {
-                try
-                {
-                    modifyandSetSpeed.Value = (decimal) ((float) MainV2.comPort.MAV.param["WP_SPEED_MAX"] / 100.0);
-                }
-                catch
-                {
-                    modifyandSetSpeed.Enabled = false;
-                }
-            }
-            // plane 3.7 and below with airspeed, uses ARSPD_ENABLE:
-            else if ((MainV2.comPort.MAV.param.ContainsKey("TRIM_ARSPD_CM") &&
-                      MainV2.comPort.MAV.param.ContainsKey("ARSPD_ENABLE")
-                      && MainV2.comPort.MAV.param.ContainsKey("ARSPD_USE") &&
-                      (float) MainV2.comPort.MAV.param["ARSPD_ENABLE"] == 1
-                      && (float) MainV2.comPort.MAV.param["ARSPD_USE"] == 1) ||
-                     // plane 3.8 and above with airspeed as per plane 3.7 to plane 3.8 migration wiki page, no longer uses ARSPD_ENABLE, uses ARSPD_TYPE instead:
-                     (MainV2.comPort.MAV.param.ContainsKey("TRIM_ARSPD_CM") &&
-                      MainV2.comPort.MAV.param.ContainsKey("ARSPD_TYPE")
-                      && MainV2.comPort.MAV.param.ContainsKey("ARSPD_USE") &&
-                      (float) MainV2.comPort.MAV.param["ARSPD_TYPE"] > 0
-                      && (float) MainV2.comPort.MAV.param["ARSPD_USE"] == 1))
-            {
-                try
-                {
-                    modifyandSetSpeed.Value = (decimal) ((float) MainV2.comPort.MAV.param["TRIM_ARSPD_CM"] / 100.0);
-                }
-                catch
-                {
-                    modifyandSetSpeed.Enabled = false;
-                }
-            } // plane without airspeed
-            else if (MainV2.comPort.MAV.param.ContainsKey("TRIM_THROTTLE") &&
-                     MainV2.comPort.MAV.param.ContainsKey("ARSPD_USE")
-                     && (float) MainV2.comPort.MAV.param["ARSPD_USE"] == 0)
-            {
-                try
-                {
-                    modifyandSetSpeed.Value = (decimal) (float) MainV2.comPort.MAV.param["TRIM_THROTTLE"];
-                }
-                catch
-                {
-                    modifyandSetSpeed.Enabled = false;
-                }
+        //        // percent
+        //        modifyandSetSpeed.ButtonText = Strings.ChangeThrottle;
+        //    }
 
-                // percent
-                modifyandSetSpeed.ButtonText = Strings.ChangeThrottle;
-            }
+        //    try
+        //    {
+        //        if (MainV2.comPort.MAV.param.ContainsKey("LOITER_RAD"))
+        //            modifyandSetLoiterRad.Value =
+        //                (decimal) ((float) MainV2.comPort.MAV.param["LOITER_RAD"] * CurrentState.multiplierdist);
+        //    }
+        //    catch
+        //    {
+        //        modifyandSetLoiterRad.Enabled = false;
+        //    }
 
-            try
-            {
-                if (MainV2.comPort.MAV.param.ContainsKey("LOITER_RAD"))
-                    modifyandSetLoiterRad.Value =
-                        (decimal) ((float) MainV2.comPort.MAV.param["LOITER_RAD"] * CurrentState.multiplierdist);
-            }
-            catch
-            {
-                modifyandSetLoiterRad.Enabled = false;
-            }
-
-            try
-            {
-                if (MainV2.comPort.MAV.param.ContainsKey("WP_LOITER_RAD"))
-                {
-                    modifyandSetLoiterRad.Value =
-                        (decimal) ((float) MainV2.comPort.MAV.param["WP_LOITER_RAD"] * CurrentState.multiplierdist);
-                }
-            }
-            catch
-            {
-                modifyandSetLoiterRad.Enabled = false;
-            }
-        }
+        //    try
+        //    {
+        //        if (MainV2.comPort.MAV.param.ContainsKey("WP_LOITER_RAD"))
+        //        {
+        //            modifyandSetLoiterRad.Value =
+        //                (decimal) ((float) MainV2.comPort.MAV.param["WP_LOITER_RAD"] * CurrentState.multiplierdist);
+        //        }
+        //    }
+        //    catch
+        //    {
+        //        modifyandSetLoiterRad.Enabled = false;
+        //    }
+        //}
 
         private void FlightData_Resize(object sender, EventArgs e)
         {
@@ -4200,50 +4200,50 @@ namespace MissionPlanner.GCSViews
             coords1.AltUnit = CurrentState.AltUnit;
         }
 
-        private void modifyandSetAlt_Click(object sender, EventArgs e)
-        {
-            int newalt = (int) modifyandSetAlt.Value;
-            try
-            {
-                MainV2.comPort.setNewWPAlt(new Locationwp {alt = newalt / CurrentState.multiplieralt});
-            }
-            catch
-            {
-                CustomMessageBox.Show(Strings.ErrorCommunicating, Strings.ERROR);
-            }
-        }
+        //private void modifyandSetAlt_Click(object sender, EventArgs e)
+        //{
+        //    int newalt = (int) modifyandSetAlt.Value;
+        //    try
+        //    {
+        //        MainV2.comPort.setNewWPAlt(new Locationwp {alt = newalt / CurrentState.multiplieralt});
+        //    }
+        //    catch
+        //    {
+        //        CustomMessageBox.Show(Strings.ErrorCommunicating, Strings.ERROR);
+        //    }
+        //}
 
-        private void modifyandSetLoiterRad_Click(object sender, EventArgs e)
-        {
-            int newrad = (int) modifyandSetLoiterRad.Value;
+        //private void modifyandSetLoiterRad_Click(object sender, EventArgs e)
+        //{
+        //    int newrad = (int) modifyandSetLoiterRad.Value;
 
-            try
-            {
-                MainV2.comPort.setParam(new[] {"LOITER_RAD", "WP_LOITER_RAD"}, newrad / CurrentState.multiplierdist);
-            }
-            catch
-            {
-                CustomMessageBox.Show(Strings.ErrorCommunicating, Strings.ERROR);
-            }
-        }
+        //    try
+        //    {
+        //        MainV2.comPort.setParam(new[] {"LOITER_RAD", "WP_LOITER_RAD"}, newrad / CurrentState.multiplierdist);
+        //    }
+        //    catch
+        //    {
+        //        CustomMessageBox.Show(Strings.ErrorCommunicating, Strings.ERROR);
+        //    }
+        //}
 
-        private async void modifyandSetSpeed_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                await MainV2.comPort.doCommandAsync(MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid,
-                        MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, (float) modifyandSetSpeed.Value, 0, 0, 0, 0, 0)
-                    .ConfigureAwait(true);
-            }
-            catch
-            {
-                CustomMessageBox.Show(Strings.ErrorCommunicating, Strings.ERROR);
-            }
-        }
+        //private async void modifyandSetSpeed_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        await MainV2.comPort.doCommandAsync(MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid,
+        //                MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, (float) modifyandSetSpeed.Value, 0, 0, 0, 0, 0)
+        //            .ConfigureAwait(true);
+        //    }
+        //    catch
+        //    {
+        //        CustomMessageBox.Show(Strings.ErrorCommunicating, Strings.ERROR);
+        //    }
+        //}
 
-        private void modifyandSetSpeed_ParentChanged(object sender, EventArgs e)
-        {
-        }
+        //private void modifyandSetSpeed_ParentChanged(object sender, EventArgs e)
+        //{
+        //}
 
         void mymap_Paint(object sender, PaintEventArgs e)
         {
