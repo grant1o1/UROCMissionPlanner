@@ -786,15 +786,20 @@ namespace MissionPlanner.GCSViews
             // 
             // BUT_ARM
             // 
+            this.BUT_ARM.BackColor = System.Drawing.Color.White;
             this.BUT_ARM.BackgroundImage = global::MissionPlanner.Properties.Resources.iconWarning32;
+            resources.ApplyResources(this.BUT_ARM, "BUT_ARM");
+            this.BUT_ARM.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_ARM.BGGradTop = System.Drawing.Color.LightGray;
             this.BUT_ARM.ColorMouseDown = System.Drawing.Color.Empty;
             this.BUT_ARM.ColorMouseOver = System.Drawing.Color.Empty;
             this.BUT_ARM.ColorNotEnabled = System.Drawing.Color.Empty;
-            resources.ApplyResources(this.BUT_ARM, "BUT_ARM");
             this.BUT_ARM.Name = "BUT_ARM";
-            this.BUT_ARM.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_ARM.Outline = System.Drawing.Color.LightGray;
+            this.BUT_ARM.TextColor = System.Drawing.Color.Black;
+            this.BUT_ARM.TextColorNotEnabled = System.Drawing.Color.Black;
             this.toolTip1.SetToolTip(this.BUT_ARM, resources.GetString("BUT_ARM.ToolTip"));
-            this.BUT_ARM.UseVisualStyleBackColor = true;
+            this.BUT_ARM.UseVisualStyleBackColor = false;
             this.BUT_ARM.Click += new System.EventHandler(this.BUT_ARM_Click);
             // 
             // BUT_joystick
@@ -2304,7 +2309,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
